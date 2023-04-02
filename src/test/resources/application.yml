@@ -1,0 +1,22 @@
+app:
+  configuration:
+    product-service:
+      schema: http
+      host: localhost
+      port: 3001
+      similarIdsEndpoint: '/product/{productId}/similarids'
+      productEndpoint: '/product/{productId}'
+  spring-doc:
+    version: 3.0.0
+  version: 1.0.0
+
+logging:
+  level:
+    root: info
+    com.susinodevelop.backendtest: debug
+
+server:
+  port: 5000
+  servlet:
+    context:
+      path: /
